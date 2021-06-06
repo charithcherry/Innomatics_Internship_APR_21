@@ -1,7 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,session
 
 app = Flask(__name__)
-
 notes = []
 @app.route('/', methods=["GET","POST"])
 def index():
